@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% load static %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'about_me' %}">About Me</a></li>
+            <li><a href="{% url 'projects'%}">Projects</a></li>
+            <li><a href="{% url 'experience'%}">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Main content block, each pages can mqdify here-->
+    {% block content %}{% endblock content %}
+
+
+    <!-- Footer-->
+     <footer>
+        <p>I Love coding with Django</p>
+     </footer>
+
+
+    <
+    
+</body>
+</html>
